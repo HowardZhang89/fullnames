@@ -1,0 +1,21 @@
+<div>
+  <h2>
+    Welcome to Full names.  
+  </h2>
+  <h3>
+  First Name: <input [(ngModel)] = "firstName" />   
+  Last Name: <input [(ngModel)] = "lastName" />
+  <h4>
+  Full Name: {{firstName}} {{lastName}}
+  </h4>
+</h3>
+</div>
+
+<button (click)="addName()"> ADD NAME </button>
+<button (click)="searchName(firstName, lastName)"> SEARCH FULLNAME </button>
+
+<div *ngIf= showClick>
+  <h3>You clicked me! </h3>
+</div>
+
+<div id = "result"></div>
